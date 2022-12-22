@@ -1,0 +1,321 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: lightgoldenrodyellow;
+}
+
+h1 {
+  color: darkmagenta;
+  background-color: lightslategray;
+  height: 50px;
+  padding: 10px;
+  font-family: "Sofia", sans-serif;
+}
+
+
+
+ #nav{
+  display: flex;
+  align-items: center;
+  float: center;
+  flex-direction: row;
+  justify-content:space-evenly;
+  padding-right: 30px;
+  width: 75%;
+  font-family: "Sofia", sans-serif;
+  font-size: 20px;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.nav{
+  font-size: 22px;
+}
+
+a{
+  color: darkcyan;
+  font-size: 20px;
+
+}
+
+
+.banner{
+  width: 75%;
+  height: 250px;
+  position: relative;
+  left: 200px;
+
+}
+
+.hero-banner{
+   position: relative;
+}
+
+body {
+ 
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  
+}
+
+#porfotitle{
+  font-family: "Tangerine";
+  position: absolute;
+  text-align: center;
+  top: 250px;
+  /*bottom: 60px;
+  right: 300px;*/
+  /*padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;*/
+  font-size: 50px;
+  left: 800px;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 25px;
+
+}
+
+
+#page-wrapper {
+  position: relative;
+  bottom: -60px;
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "about about about"
+  "work work contact"
+  "resume resume contact"
+;
+}
+
+  
+.page-section{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#about {
+  grid-area: about;
+  background-image: url("../images/02-portfolio-2.jpg");
+  
+}
+
+#work {
+  grid-area: work;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#contact {
+  grid-area: contact;
+  background-image: url("../images/02-portfolio-3.jpg");
+  position: relative;
+  
+}
+#resume {
+  grid-area: resume;
+  background-image: url("../images/02-portfolio-4.jpg");
+  
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 75px;
+  color: white;
+  font-size: 20px;
+  border-bottom: 5px solid #ff00aa;
+
+}
+
+.heading:hover{
+  color: #ff00aa;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color:yellow;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  font-size: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Modal2 (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(146, 31, 31); /* Fallback color */
+  background-color: rgba(154, 34, 34, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content2 {
+  background-color: pink;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  font-size: 20px;
+}
+
+/* The Close Button */
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* The Modal3 (background) */
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(189, 180, 180); /* Fallback color */
+  background-color: rgba(72, 124, 133, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content3 {
+  background-color:rgb(149, 209, 222);
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  font-size: 20px;
+}
+
+/* The Close Button */
+.close3 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Modal4 (background) */
+.modal4{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(212, 237, 133); /* Fallback color */
+  background-color: rgba(72, 124, 133, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content4 {
+  background-color: rgb(233, 233, 183);
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  font-size: 20px;
+}
+
+/* The Close Button */
+.close4 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+/*h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}*/

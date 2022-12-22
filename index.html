@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>Chung // Web Developer</title>
+</head>
+
+<body>
+     <!-- main logo / nav -->
+  <header>
+      <h1>Chung</h1>
+    <nav id="nav">
+          <a class="nav" href="#about">About Me</a>
+          <a class="nav" href="#work">Work</a>
+          <a class="nav" href="#contact">Contact Me</a>
+          <a class="nav" href="#resume">Resume</a>
+     </nav>
+  </header>
+    <!-- hero banner -->
+   <section class="hero-banner">
+    <img class="banner" src="./images/logo.jpg" alt="christmas mions">
+    <div>
+      <h2 id="porfotitle">My Portfolio</h2>
+    </div>
+  </section>
+
+  <main id="page-wrapper">
+    <!-- about me -->
+ <section class="page-section" id="about">
+      <h2 class="heading" id="myBtn">About Me</h2>
+      <!-- The Modal -->
+  <div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>About Me: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque hic ducimus, quam dolor voluptatibus voluptates, aliquam libero maxime perspiciatis dolores praesentium magnam est pariatur eius natus autem vero molestias debitis!</p>
+  </div>
+</div>
+</section>
+  
+    <!-- portfolio container -->
+    <section class="page-section" id="work">
+      <h2 class="heading" id="myBtn2">Work</h2>
+    <!-- The Modal2 -->
+  <div id="myModal2" class="modal2">
+      <!-- Modal content -->
+   <div class="modal-content2">
+    <span2 class="close2">&times;</span2>
+    <p2>Work: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus expedita libero nostr</p2>
+   </div>
+  </div>
+ </section>
+  
+    <!-- contact -->
+<section class="page-section" id="contact">
+      <h2 class="heading" id="myBtn3">Contact Me</h2>
+     <!-- The Modal3 -->
+  <div id="myModal3" class="modal3">
+     <!-- Modal content -->
+   <div class="modal-content3">
+    <span3 class="close3">&times;</span3>
+    <p3>Name: Lorem ipsum  <br>Email : Lorem@frontend.com <br> ig: @Lorem_Sample</p3>
+
+   </div>
+  </div>
+</section>
+
+  
+   <!--  Resume  -->
+    <section class="page-section" id="resume">
+      <h2 class="heading" id="myBtn4">Resume</h2>
+           <!-- The Modal4 -->
+  <div id="myModal4" class="modal4">
+    <!-- Modal content -->
+  <div class="modal-content4">
+   <span4 class="close4">&times;</span4>
+   <p4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ab delectus esse odio alias a ducimus libero, facilis ex, in eveniet quas. Quia rerum ratione, molestias dolore maiores consectetur quidem.</p4>
+
+  </div>
+ </div>
+    </section>
+  </main>
+
+  <script>
+          // Get the modal
+          var modal = document.getElementById("myModal");
+
+          // Get the button that opens the modal
+          var btn = document.getElementById("myBtn");
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          // When the user clicks the button, open the modal 
+          btn.onclick = function () {
+            modal.style.display = "block";
+          }
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function () {
+            modal.style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+
+          // Get the modal2
+          var modal2 = document.getElementById("myModal2");
+
+          // Get the button that opens the modal
+          var btn2 = document.getElementById("myBtn2");
+
+          // Get the <span2> element that closes the modal
+          var span2 = document.getElementsByClassName("close2")[0];
+
+          // When the user clicks the button, open the modal 
+          btn2.onclick = function () {
+            modal2.style.display = "block";
+          }
+
+          // When the user clicks on <span2> (x), close the modal
+          span2.onclick = function () {
+            modal2.style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function (event) {
+            if (event.target == modal2) {
+              modal2.style.display = "none";
+            }
+          }
+
+     // Get the modal3
+     var modal3 = document.getElementById("myModal3");
+
+     // Get the button that opens the modal
+     var btn3 = document.getElementById("myBtn3");
+     
+     // Get the <span3> element that closes the modal
+     var span3 = document.getElementsByClassName("close3")[0];
+     
+     // When the user clicks the button, open the modal 
+     btn3.onclick = function() {
+       modal3.style.display = "block";
+     }
+     
+     // When the user clicks on <span3> (x), close the modal
+     span3.onclick = function() {
+       modal3.style.display = "none";
+     }
+     
+     // When the user clicks anywhere outside of the modal, close it
+     window.onclick = function(event) {
+       if (event.target == modal3) {
+         modal3.style.display = "none";
+       }
+     }
+
+    // Get the modal4
+    var modal4 = document.getElementById("myModal4");
+
+    // Get the button that opens the modal
+    var btn4 = document.getElementById("myBtn4");
+    
+    // Get the <span4> element that closes the modal
+    var span4 = document.getElementsByClassName("close4")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn4.onclick = function() {
+      modal4.style.display = "block";
+    }
+    
+    // When the user clicks on <span4> (x), close the modal
+    span4.onclick = function() {
+      modal4.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal4) {
+        modal4.style.display = "none";
+      }
+    }
+    
+  </script>
+</body>
+
+</html>
